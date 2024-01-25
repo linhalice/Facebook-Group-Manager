@@ -83,8 +83,8 @@ namespace Facebook_Group_Manager
 
                 foreach (DataGridViewRow row in dataGridViewGroup.Rows)
                 {
-                    Thread thread = new Thread(() =>
-                    {
+                    //Thread thread = new Thread(() =>
+                    //{
                         AuraeColor auraeColor = new AuraeColor(AuraeColorEnum.Info);
                         row.DefaultCellStyle.ForeColor = auraeColor.AuraeForeColor;
                         row.DefaultCellStyle.BackColor = auraeColor.AuraeBackColor;
@@ -115,9 +115,9 @@ namespace Facebook_Group_Manager
                         row.DefaultCellStyle.ForeColor = auraeColor.AuraeForeColor;
                         row.DefaultCellStyle.BackColor = auraeColor.AuraeBackColor;
 
-                    });
-                    thread.IsBackground = true;
-                    thread.Start();
+                    //});
+                    //thread.IsBackground = true;
+                    //thread.Start();
                 }
             });
             threadBig.IsBackground = true;
