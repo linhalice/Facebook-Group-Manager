@@ -30,18 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             dataGridViewGroup = new DataGridView();
-            cIndex = new DataGridViewTextBoxColumn();
-            cId = new DataGridViewTextBoxColumn();
-            cLink = new DataGridViewTextBoxColumn();
-            cName = new DataGridViewTextBoxColumn();
-            cMember = new DataGridViewTextBoxColumn();
-            cStatus = new DataGridViewTextBoxColumn();
             label1 = new Label();
             textBoxCookie = new TextBox();
             button1 = new Button();
             textBoxToken = new TextBox();
             label2 = new Label();
             button2 = new Button();
+            cIndex = new DataGridViewTextBoxColumn();
+            cId = new DataGridViewTextBoxColumn();
+            cMember = new DataGridViewTextBoxColumn();
+            cStatus = new DataGridViewTextBoxColumn();
+            cLink = new DataGridViewTextBoxColumn();
+            cName = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridViewGroup).BeginInit();
             SuspendLayout();
             // 
@@ -51,45 +51,11 @@
             dataGridViewGroup.AllowUserToDeleteRows = false;
             dataGridViewGroup.AllowUserToResizeRows = false;
             dataGridViewGroup.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewGroup.Columns.AddRange(new DataGridViewColumn[] { cIndex, cId, cLink, cName, cMember, cStatus });
+            dataGridViewGroup.Columns.AddRange(new DataGridViewColumn[] { cIndex, cId, cMember, cStatus, cLink, cName });
             dataGridViewGroup.Location = new Point(12, 12);
             dataGridViewGroup.Name = "dataGridViewGroup";
             dataGridViewGroup.Size = new Size(901, 309);
             dataGridViewGroup.TabIndex = 0;
-            // 
-            // cIndex
-            // 
-            cIndex.HeaderText = "Index";
-            cIndex.Name = "cIndex";
-            cIndex.Width = 80;
-            // 
-            // cId
-            // 
-            cId.HeaderText = "Id";
-            cId.Name = "cId";
-            cId.Width = 150;
-            // 
-            // cLink
-            // 
-            cLink.HeaderText = "Link";
-            cLink.Name = "cLink";
-            // 
-            // cName
-            // 
-            cName.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            cName.HeaderText = "Name";
-            cName.Name = "cName";
-            // 
-            // cMember
-            // 
-            cMember.HeaderText = "Member";
-            cMember.Name = "cMember";
-            // 
-            // cStatus
-            // 
-            cStatus.HeaderText = "Status";
-            cStatus.Name = "cStatus";
-            cStatus.Width = 200;
             // 
             // label1
             // 
@@ -146,6 +112,40 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // cIndex
+            // 
+            cIndex.HeaderText = "Index";
+            cIndex.Name = "cIndex";
+            cIndex.Width = 80;
+            // 
+            // cId
+            // 
+            cId.HeaderText = "Id";
+            cId.Name = "cId";
+            cId.Width = 150;
+            // 
+            // cMember
+            // 
+            cMember.HeaderText = "Member";
+            cMember.Name = "cMember";
+            // 
+            // cStatus
+            // 
+            cStatus.HeaderText = "Status";
+            cStatus.Name = "cStatus";
+            cStatus.Width = 200;
+            // 
+            // cLink
+            // 
+            cLink.HeaderText = "Link";
+            cLink.Name = "cLink";
+            // 
+            // cName
+            // 
+            cName.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            cName.HeaderText = "Name";
+            cName.Name = "cName";
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -179,9 +179,9 @@
         private Button button2;
         private DataGridViewTextBoxColumn cIndex;
         private DataGridViewTextBoxColumn cId;
-        private DataGridViewTextBoxColumn cLink;
-        private DataGridViewTextBoxColumn cName;
         private DataGridViewTextBoxColumn cMember;
         private DataGridViewTextBoxColumn cStatus;
+        private DataGridViewTextBoxColumn cLink;
+        private DataGridViewTextBoxColumn cName;
     }
 }
