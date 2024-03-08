@@ -48,7 +48,7 @@ namespace Facebook_Group_Manager
                 int a = dataGridViewGroup.Rows.Add();
                 dataGridViewGroup.Rows[a].Cells["cIndex"].Value = a + 1;
                 dataGridViewGroup.Rows[a].Cells["cId"].Value = data.Replace("\r", "");
-                dataGridViewGroup.Rows[a].Cells["cLink"].Value = "";
+                dataGridViewGroup.Rows[a].Cells["cLink"].Value = "https://www.facebook.com/"+ data.Replace("\r", "");
                 dataGridViewGroup.Rows[a].Cells["cName"].Value = "";
                 dataGridViewGroup.Rows[a].Cells["cMember"].Value = "";
                 dataGridViewGroup.Rows[a].Cells["cStatus"].Value = "";
